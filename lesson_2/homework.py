@@ -34,7 +34,6 @@ pizza_slices = 8
 people = 4
 slices_per_person = int(pizza_slices / people)
 print("Slices per person:", slices_per_person)
-
 # ---------------------------------------------------------------------
 # Exercise 3 - Shopping Discount
 # Lisa wants to buy a pair of shoes that cost $80. The store is
