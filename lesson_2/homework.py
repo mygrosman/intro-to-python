@@ -22,18 +22,18 @@ print(total_cost)
 
 average_speed = 60
 hours_available = 4
-total_distance = ??? # calculate here
-print(???)  # print the result
+total_distance = average_speed * hours_available # calculate here
+print("Total distance:", total_distance)  # print the result
 
 # ---------------------------------------------------------------------
 # Exercise 2 - Pizza Slices
 # A pizza is cut into 8 equal slices. Calculate and print how many
 # slices each person will get if there are 4 people sharing the pizza.
 
-pizza_slices = ???
-people = ???
-slices_per_person = ???
-print(???)
+pizza_slices = 8
+people = 4
+slices_per_person = int(pizza_slices / people)
+print("Slices per person:", slices_per_person)
 
 # ---------------------------------------------------------------------
 # Exercise 3 - Shopping Discount
@@ -46,7 +46,11 @@ print(???)
 # The formula to count the discounted price:
 # multiply the original price by the discount percentage and divide by 100.
 
+original_price = 80
+disount_percentage = 20
+final_price = original_price - ((original_price * disount_percentage) / 100)
 
+print("Price paid", final_price)
 # ---------------------------------------------------------------------
 # Exercise 4 - Temperature Conversion
 # You are designing a weather app and need to convert temperature
@@ -55,7 +59,10 @@ print(???)
 # To convert Celsis to Fahrenheit you need to multiply
 # the temperature in Celsius by 9/5 and add 32 to the result
 
+temperature_in_celsius = 30
+temperature_in_fahrenheit = (temperature_in_celsius * (9/5)) + 32
 
+print("Temperature in F:", temperature_in_fahrenheit)
 # ---------------------------------------------------------------------
 # Exercise 5 - Gardening
 # You're planning a garden and need to calculate the area of
@@ -64,7 +71,12 @@ print(???)
 # To calculate the area of a circle, multiply π (~3.141) with the square of
 # the circle's radius.
 
+radius_of_flowerbed = 3.5
+pi = 3.141
 
+area_of_flowerbed = round((pi * (radius_of_flowerbed **2)), 2)
+
+print("The area of the flowerbed is:", area_of_flowerbed) #decided to round this to 2 decimal places
 # ---------------------------------------------------------------------
 # Exercise 6 - Convert Temperature
 # You're building a weather app, and you want to display the current
@@ -74,7 +86,10 @@ print(???)
 # temperature for display.
 # As an example, if the temperature is 24.8ºC, you need to print 24.
 
+temperature_given = 25.5
+temperature_converted = int(temperature_given)
 
+print("The temperature is:", temperature_converted)
 # ---------------------------------------------------------------------
 # Exercise 7 - Baking Cookies
 # You are baking cookies and have 17 chocolate chips. You
@@ -82,6 +97,14 @@ print(???)
 # print the number of chocolate chips in each cookie and the
 # remaining chips.
 
+chocolate_chips = 17
+cookies = 5
+
+chocolate_chips_per_cookie = chocolate_chips // cookies
+chocolate_chips_remaining = chocolate_chips - (chocolate_chips_per_cookie * cookies)
+
+print("Chocolate chips in each cookie", chocolate_chips_per_cookie)
+print("Chocolate chips remaining:", chocolate_chips_remaining)
 
 # ---------------------------------------------------------------------
 # Exercise 8 - Fix the Code - Event total earnings
@@ -99,11 +122,11 @@ print(???)
 #
 # For the values provided we are expecting a total earning of 750000,
 # however the code is not working correctly. Can you fix it?
-1st_event_participants = 250
-2nd_event_participants = 500
-ticket_$ = 1000
+participants_event1 = 250
+participants_event2 = 500
+ticket_price = 1000
 
-total_earnings = (1st_event_total + 2nd_event_total) * ticket_$
+total_earnings = (participants_event1 + participants_event2) * ticket_price
 print(total_earnings)
 
 
@@ -129,8 +152,8 @@ student_1_age = 15
 student_2_age = 17
 student_3_age = 13
 
-students_age_mean = student_1_age + student_2_age + student_3_age / 3
-print(students_mean_age)
+students_age_mean = (student_1_age + student_2_age + student_3_age) / 3
+print(students_age_mean)
 
 # ---------------------------------------------------------------------
 # Challenge (OPTIONAL!): Separating Digits of a Number
